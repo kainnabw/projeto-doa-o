@@ -22,11 +22,11 @@ header{
     justify-content: space-between;
 }
 .figure_header{
-    width: 15%;
+    width: 10%;
     height: auto;
 }
 header img{
-    width: 90%;
+    width: 50%;
     height: auto;
 }
 header q {
