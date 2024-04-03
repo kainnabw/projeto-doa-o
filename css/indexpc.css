@@ -178,6 +178,7 @@ li:hover {
 
 /* personalização do botão em localização(maps) */
 .botao_localizacao {
+    margin-top: 2%;
     color: black;
     border: 2px solid red;
     background-color: #E0E2D7;
@@ -224,6 +225,9 @@ hr {
 .figure_video {
     width: 35%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
 }
 
@@ -237,6 +241,7 @@ hr {
 /* personalização do tamanho e cor do footer */
 footer {
     background-color: #333;
+    margin-top: 3%;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -244,7 +249,7 @@ footer {
 
 /* personalização das imagens usadas no footer  */
 #imagem_footer {
-    width: 5%;
+    width: 3%;
     height: auto;
 }
 
