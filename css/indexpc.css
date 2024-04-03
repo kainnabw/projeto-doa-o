@@ -3,66 +3,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Satisfy&family=Signika:wght@300..700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+/* cor de fundo e tamanho do body */
+body {
     height: 100vh;
-    background-color:  #f2f2f2; ; /* Cor de fundo */
+    background-color: #f2f2f2;
+    ;
+    /* Cor de fundo */
 }
 
-header{
+/* personalização do header como cor tamanho e posicionamento de elementos */
+header {
     height: 10%;
     width: 100%;
-    background-color: #b30000; /* Vermelho fraco */
+    background-color: #b30000;
+    /* Vermelho fraco */
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.figure_header{
+
+/* personalização para deixar a foto responsiva */
+.figure_header {
     width: 10%;
     height: auto;
 }
-header img{
+
+/* personalização para ajustar tamanho da imagem */
+header img {
     width: 50%;
     height: auto;
 }
+
+/* personalização de fonte da frase e espaçamento */
 header q {
     font-family: "Satisfy", cursive;
     margin-right: 15%;
 }
 
-
+/* cor de fundo e espaçamento do main */
 main {
-    background-color:  #f2f2f2; ; /* Cor de fundo */
+    background-color: #f2f2f2;
+    ;
+    /* Cor de fundo */
     margin-top: 2%;
 }
-section{
+
+/* centralização dos itens do section e espaçamento */
+section {
     padding: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-video{
+
+/* ajuste do tamanho do video e espaçamento */
+video {
     width: 90%;
     height: auto;
     margin-bottom: 5%;
 }
-#section_noticias{
+
+/* centralização das noticias */
+#section_noticias {
     display: flex;
     text-align: center;
 }
-.noticias{
+
+/* ajuste do tamanho das noticias */
+.noticias {
     width: 90%;
 }
+
+/* tamanho do titulo */
 h1 {
     font-size: 30px;
 }
+
+/* personalização dos subtitulos como cor espaçamento e tamanhos */
 h2 {
-    color: #D91414; /* Cor neutra */
+    color: #D91414;
+    /* Cor neutra */
     font-size: 50px;
     margin-bottom: 1%;
     background-color: #E0E2D7;
@@ -71,68 +98,110 @@ h2 {
     font-family: "Patua One", serif;
 
 }
+
+/* personalização dos textos como tamanhos e espaçamentos */
 p {
-    color: black; /* Cor neutra */
-  
+    color: black;
+    /* Cor neutra */
+
     padding-bottom: 1%;
     border-radius: 7px;
     font-size: 17px;
     font-family: "Signika", sans-serif;
 }
 
+/* personalização do texto de listas de requisitos e impedições */
 ul {
     padding-left: 2%;
     padding-right: 10%;
     margin-bottom: 2%;
-    background-color:#E6E6FA ;
+    background-color: #E6E6FA;
     border-radius: 7px;
     font-family: "Signika", sans-serif;
 }
+
+/* espaçamento da caixa de texto das listas */
 li {
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 17px;
-   align-items: center;
+    align-items: center;
 }
 
+/* animação das lista de requisitos e impedições */
+li:hover {
+    box-shadow: 0 0 5px #333;
+    transition: box-shadow 0.7s;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+    transform: scale(1.2);
+    transform: scale(1.2);
+}
 
-.localizacao{
+/* centralização das localizações */
+.localizacao {
     display: flex;
-  
     text-align: center;
     justify-content: center;
-    
+
 }
+
+/* espaçamento dos textos usados nas localizações */
 .localizacao p {
     margin-top: 2%;
-  
+
 }
-.localizacao_imagem{
+
+/* ajuste de tamanho e espaçamento nas imagens usadas na localização */
+.localizacao_imagem {
     width: 5%;
     height: 5%;
     padding: 0;
-  
-   
-}
-.localizacao_telefone{
-    display: flex;
-    
+
+
 }
 
-.localizacao_imagem_telefone{
+/* ajuste de posicionamento do setor de telefone na lozalização */
+.localizacao_telefone {
+    display: flex;
+
+}
+
+/* ajuste de tamanho e espaçamento da imagem do teefone em localizações */
+.localizacao_imagem_telefone {
     width: 2%;
     height: 2%;
-    margin-right: 5%;
+    margin-right: 3%;
     margin-left: 40%;
 }
-.botao_localizacao{
-    width: 140px;
-    height: 30px;
-    margin-top: 2%;
+
+/* personalização do botão em localização(maps) */
+.botao_localizacao {
+    color: black;
+    border: 2px solid red;
+    background-color: #E0E2D7;
     border-radius: 7px;
-    background-color:#90ee90;
+    padding: 18px;
+    display: inline-block;
+    font-family: "Patua One", serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 orange;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
-hr{
+
+.botao_localizacao:hover {
+    box-shadow: inset 0 0 0 50px red;
+    color: white;
+    font-size: 17px;
+}
+
+/* personalização do hr de divisão de tópicos */
+hr {
     width: 100%;
     color: black;
     margin-top: 5%;
@@ -140,7 +209,9 @@ hr{
     background-color: red;
     padding: 1px;
 }
-.container{
+
+/* centralização geral do tópico de localização */
+.container {
     /* background-color: white; */
     display: flex;
     text-align: center;
@@ -148,12 +219,65 @@ hr{
     flex-direction: column;
     padding: 0px;
 }
-.figure_video{
+
+/* ajuste do tamanho do video */
+.figure_video {
     width: 35%;
     height: auto;
 
 }
-.figure_imagem{
+
+/* ajuste tamanho das imagens das noticias */
+.figure_imagem {
     width: 50%;
     height: auto;
 }
+
+/* Footer :  */
+/* personalização do tamanho e cor do footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* personalização das imagens usadas no footer  */
+#imagem_footer {
+    width: 5%;
+    height: auto;
+}
+
+/* personalização do texto no footer */
+.credits {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+/* slide personalizado de imagens */
+
+#slider {
+    width: 70%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider img {
+    opacity: 0;
+    position: absolute;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+/* botão  */
